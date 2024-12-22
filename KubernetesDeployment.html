@@ -1,0 +1,662 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+    <!-- title of site -->
+    <title>Kanthivardhan K</title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--flat icon css-->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .project-container {
+            max-width: 1300px;
+            margin: 130px 40px;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .project-header {
+            border-bottom: 2px solid #e2e2e2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-details {
+            margin-bottom: 40px;
+        }
+
+        .project-description {
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- top-area Start -->
+    <header class="top-area">
+        <div class="header-area">
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+
+                <div class="container">
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Kanthivardhan K</a>
+                    </div>
+                    <!--/.navbar-header-->
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class=" smooth-menu active"></li>
+                            <li class=" smooth-menu"><a href="index.html#education">education</a></li>
+                            <li class="smooth-menu"><a href="index.html#skills">skills</a></li>
+                            <li class="smooth-menu"><a href="index.html#experience">experience</a></li>
+                            <li class="smooth-menu"><a href="index.html#projects">projects</a></li>
+                            <li class="smooth-menu"><a href="index.html#Blog">Achievements</a></li>
+                            <li class="smooth-menu"><a href="index.html#profiles">profileS</a></li>
+                            <li class="smooth-menu"><a href="index.html#contact">contact</a></li>
+                        </ul>
+                        <!--/.nav -->
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!--/.container-->
+            </nav>
+            <!--/nav-->
+            <!-- End Navigation -->
+        </div>
+        <!--/.header-area-->
+
+        <div class="clearfix"></div>
+
+    </header>
+    <!-- /.top-area-->
+
+    <section id="project">
+        <div class="project-container">
+            <div class="project-header">
+                <h1>Kubernetes Deployment and CI/CD Automation</h1>
+            </div>
+            <div class="project-details">
+                <pre><code>
+                <h3>Project Overview</h3><br>
+                <p>This project focuses on deploying a Maven-based web application using a fully automated CI/CD pipeline integrated with Jenkins, Ansible, Docker, and Kubernetes for scalability and efficiency. The setup begins with configuring a Git server on an EC2 instance to manage the source code, followed by creating a Maven web application and pushing it to a GitHub repository. A Jenkins server is then set up to handle continuous integration, with plugins and job configurations enabling automated builds and deployments. Ansible is installed on a separate EC2 instance to manage configuration and deployment tasks, including creating Docker images from WAR files and pushing them to Docker Hub. </p>
+				<p>The deployment process involves setting up a Kubernetes cluster using Amazon EKS, where Docker images are pulled and containers are orchestrated for high availability. Kubernetes manifests are used to deploy the application with a load balancer, ensuring seamless user access. For monitoring, Prometheus and Grafana are integrated using Helm charts, providing real-time insights into the performance and resource utilization of the Kubernetes cluster. The pipeline automates tasks such as code cloning, building, transferring artifacts, and deploying containers, while password-less SSH ensures secure communication between servers. The final output is a scalable, fault-tolerant web application accessible via DNS, backed by robust monitoring and automated workflows.deployments.</p>
+                </code></pre>
+                <img src="assets/images/project/imgk8s.png" alt="Project Image" style="display: block; margin: 0 auto;"><p></p>
+
+				<!--<p>The company’s goal is to deliver the product updates frequently to production automatically 
+with High quality & Reliability. They also want to accelerate software delivery speed, quality 
+and reducing feedback time between developers and testers.</p>-->
+            </div>
+            <div class="project-description">
+                <pre><code>
+                <h3>Technologies Used</h3>
+				<h6>
+            • Version Control                   : Git, GitHub
+            • Build & Deployment Tools          :  Maven, Jenkins
+            • Containerization & Orchestration  : Docker, Kubernetes, Helm
+	    • Configuration Management          :  Ansible
+	    • Cloud Technologies                : AWS (EC2, VPC, IAM, EKS Stack)
+	    • Monitoring & Logging              :  Prometheus, Grafana
+	    • Web & Application Servers         : Tomcat
+            • Operating Systems                 : Linux (Amazon Linux, Ubuntu)
+                </h6>
+                </code></pre>
+            </div>
+            <div class="project-description">
+              <h3>Description</h3><br>
+				<!--<p>As soon as the developer pushes the updated code on the GIT master branch, the code should 
+be checked out, compiled, tested, packaged and containerized. A new test-server should be 
+provisioned using terraform and should be automatically configured using Ansible with all the 
+required software’s and as soon as the server is available, the application must be deployed to 
+the test-server automatically.  
+The deployment should then be tested using a test automation tool, and if the build is 
+Successful, Prod server must be configured with all the software it should be pushed to the 
+prod server. All this should happen automatically and should be triggered from a push to the 
+GitHub master branch. 
+Continuous monitoring server must be configured to monitor the test as well as prod server 
+using Prometheus and Grafana should be configured to display a dashboard with following 
+metrics.</p>
+					<ol style="margin-left: 80px;">
+                    <li>CPU utilization</li>
+                    <li>Disk Space Utilization </li>
+					<li>Total Available Memory</li>
+			</ol>-->
+			<pre><code>
+		<h6>Git server (developers machine)
+
+            Name git-server
+            Ami amazon-linux
+            Instance type t2.micro
+            Key-pair
+            Security groups 22,80 port
+            Storage 8 Gi
+            </h6>
+            </code></pre><br>
+           <!-- <br>&nbsp;&nbsp;&nbsp;&nbsp;Storage: 15 GB gp2<br>&nbsp;&nbsp;&nbsp;&nbsp;Security group: allow all traffic</p>-->
+				<img src="assets/images/project/step1.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<pre><code><p>
+                    Connect to git-server(ssh client(mobaxtrem))
+
+                                Install and config git using the below commands
+
+                                    yum install git -y
+                                    git config --global user.name "kv"
+                                    git config --global user.email "kv@gmail.com"
+                                    git –version
+                                    git config --list
+                                    
+                                install maven, java and setting its path
+                                
+                                installing maven
+                                    wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz<br>
+                                    tar -xvzf apache-maven-3.9.9-bin.tar.gz
+                                    mv apache-maven-3.9.9/ maven
+                                    
+
+                                installing java
+                                    yum install java-17* -y
+                                    find /usr/lib/jvm/java-17* | head -n 3
+
+                                Setting Path
+                                    vi .bash_profile
+                                        JAVA_HOME= /usr/lib/jvm/java-17-amazon-corretto.x86_64
+                                        M2_HOME=/opt/maven
+                                        M2=/opt/maven/bin
+                                        PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2:$M2_HOME
+                </p>
+            </code></pre>				
+                <br>
+                <pre><code><h6>
+                    Ssh-connection
+                        Password less ssh connection between github and local machine
+                        ssh-keygen
+                        cd .ssh
+                        cat id_rsa.pub
+                        Copy this public key  and paste it in github ssh and gpg keys
+                        
+                </h6></code></pre>                 
+                                <br>
+				<!--<p>Update all packages and install jdk<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>sudo apt update</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>sudo apt install maven</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>sudo apt install docker.io -y</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>sudo apt install openjdk-17-jre -y</strong></p>-->
+				<img src="assets/images/project/img2.png" alt="Project Image" style="display: block; margin: 0 auto;"><p></p>
+				<!--<img src="assets/images/project/img3.jpg" alt="Project Image" style="display: block; margin: 0 auto;">--> <br>
+				<pre><code><h6>
+                    Creating simple maven project<!--Navigate to the <a href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli" target="_blank">website</a> to get installation setup.<br>Create a shell script and run the script as shown below.</p>-->
+                    mvn archetype:generate -> it give all available templates, out of which we want an archetype which contains a sample maven webapp project (2212 template ) <br>
+                    mvn archetype:generate | grep maven-archetype-webapp
+                </h6></code></pre> 
+                    
+                <img src="assets/images/project/img4.png" alt="Project Image" style="display: block; margin: 0 auto;"><p></p>
+				<img src="assets/images/project/img5.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+                <pre><code><p>
+                    Now simple-maven-webapp project is created
+
+                        Pushing the code to github(central-repo)
+                        Create a repository in github and execute the following commands
+                        git remote add origin git@github.com:KanthivardhanK/webapp-project.git
+                        git branch -M main
+                        git add .
+                        git commit -m "first commit"
+                        git push -u origin main
+                </p></code></pre><br>
+                
+				<!--<p>Install Ansible<br>Navigate to the <a href="https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu" target="_blank">website</a> to get installation setup.<br>Create a shell script and run the script as shown below.</p>-->
+				<img src="assets/images/project/img6.png" alt="Project Image" style="display: block; margin: 0 auto;"><p></p>
+				<img src="assets/images/project/img7.png" alt="Project Image" style="display: block; margin: 0 auto;"> <br>
+				<pre><code>
+                <p><h3>Launching Jenkins-server</h3><!--Navigate to the <a href="https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu" target="_blank">website</a> to get installation setup.<br>Create a shell script and run the script as shown below.</p>-->
+				<p>Launch an ec2 server with below configuration
+                    Name jenkins-server
+                    Ami amazon-linux
+                    Instance type t2.medium
+                    Key-pair
+                    Security groups 22,80,8080 ports
+                    Storage 15 Gi
+                    </p>
+                </code></pre><br> 
+                <img src="assets/images/project/img8.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<pre><code>
+                <h3>Connect to Jenkins-server</h3><!--&nbsp;&nbsp;&nbsp;&nbsp;<strong># visudo</strong></p>-->
+                <p>prerequisite to install Jenkins – java
+                    yum install java-17* -y
+                    find /usr/lib/jvm/java-17* | head -n >
+                    
+                    install git and maven as we run the jobs related to maven
+                    wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
+                    tar -xvzf apache-maven-3.9.9-bin.tar.gz
+                    mv apache-maven-3.9.9/ maven
+                    </p>
+                <h3>setting java and maven path</h3>
+                <p>vi .bash_profile
+                    JAVA_HOME= /usr/lib/jvm/java-17-amazon-corretto.x86_64
+                    M2_HOME=/opt/maven
+                    M2=/opt/maven/bin
+                    PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2:$M2_HOME
+                </p>
+                <h3>Installing Jenkins</h3>
+                <p>sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+                    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+                    yum install Jenkins -y
+                    service Jenkins start
+                    chkconfig Jenkins on
+                    </p>
+
+                <h3>To connect to jenkins dashboard</h3>
+                <p>jenkins server Public IP:8080
+                copy the password from the given path and continue</p>
+            </code></pre>
+				<img src="assets/images/project/img9.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<!--<p>Add Jenkins user in docker group using below command<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>$ usermof -aG docker jenkins</strong></p>
+				<p>Open Jenkins UI<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>http://&lt;pub_IP&gt;: 8080/</strong></p>--><br>
+                <p>Install the below mentioned plugins and Configure the java,git and maven paths in Jenkins tools</p><br>
+				<img src="assets/images/project/img10.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<pre><code><p>
+                <p><h3>Launching jenkins slave</h3></p>
+                <p>Launch an ec2 instance and install java-17*
+                    In Jenkins dashboard creade node and paste the command in jenkins slave
+                    now the node is connected successfully
+                    install the Plugin "instance identity"
+                    and mmodify -> Manage Jenkins-security-agents to "random"
+                    </p>
+                <p><h3>Launching Ansible server</h3></p>
+                <p>Launch ec2 instance
+                    Name ansible-server
+                    Ami amazon-linux
+                    Instance type t2.micro
+                    Key-pair
+                    Security groups 22,80 ports
+                    Storage 8 Gi
+                    Connect to instance using mobaxterm
+                    </p>
+                <p><h3>Install ansible</h3></p>
+                <p>yum install python -y
+                    yum install python-pip
+                    pip install ansible
+                    ansible –version
+                    </p>
+                <p><h3>Launch k8s-server</h3></p>
+                <p>Launch ec2 instance with the following configuration
+                    Name k8s-server
+                    Ami amazon-linux
+                    Instance type t2.medium
+                    Key-pair
+                    Security groups 22,80 ports
+                    Storage 25 Gi
+                    </p>
+                <p><h3>Create user ansadmin and passwd in both the ansible-server and k8s-server</h3>
+                    useradd ansadmin
+                    passwd ansadmin
+                    
+                    Visudo
+                        ansadmin ALL=ALL NOPASSWD=ALL
+                        
+                    Vi /etc/ssh/sshd_config
+                        Passwordauthentication yes
+                        Permitrootpassword yes
+                    </p>
+                <p><h3>Connecting ansible server with k8s-server (password-less ssh authentication)</h3></p>
+                <p>In ansible-server being ansadmin user
+                    Ssh-keygen
+                    
+                In both ansible-server and k8s-server
+                    Passwd root (give password)
+                    
+                Vi /etc/ssh/sshd_config
+                    PasswordAuthentication ye
+                    Permitrootpassword yes
+                    
+                </p>  </code></pre>
+                    <img src="assets/images/project/img11.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+                <pre><code><p>
+                    In ansible-server as ansadmin
+                        ssh-copy-id root@(k8s-server-private-ip)
+                        ssh-copy-id ansadmin@(ansible-server-private-ip)
+                    
+                    vi /etc/ansible/hosts
+                        [k8s_server]
+                        k8s-server-private-ip
+                        [ansible_server]
+                        ansible-server-private-ip
+                
+                    run the following command 
+                    ansible all -m ping
+                
+                </p>  </code></pre>
+				<!--<img src="assets/images/project/img11.jpg" alt="Project Image" style="display: block; margin: 0 auto;">
+				<p>For terraform create new role in AWS. Give AmazoneEC2FullAccess.</p>-->
+				<img src="assets/images/project/img12.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+                <p>Now ansible is connected to k8s server successfully!!</p>
+                <p><h3>Connecting Jenkins with ansible-server</h3></p>
+                <p>Configure the system setings in jenkins dashboard as below</p>
+                <p>In jenkins dashboard manage Jenkins>system add ssh server and details as below</p><br>
+				<img src="assets/images/project/img13.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+                <p>Installing docker in ansible server<br>
+                    yum install docker -y<br>
+                    service docker start<br>
+                    </p>
+                <p><h3>Creating a job(simple-maven-project) in Jenkins</h3></p>
+                <p>Add github repository and add maven goal as show in below</p><br>
+				<img src="assets/images/project/img14.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Finally add post-build action which transfer war file to the ansible-server(/opt/docker)<br>
+                    Befor that give full permission to /opt/docker file<br>
+                        chown -r ansadmin:ansadmin /opt/docker<br>
+                    </p>
+				<img src="assets/images/project/img15.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>After building the job we get war file in ansible server as below</p>
+				<img src="assets/images/project/img16.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<pre><code><p>
+                In ansible server under /opt/docker as ansadmin
+
+                    vi Dockerfile
+                        FROM tomcat:latest
+                        RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
+                        COPY ./*.war /usr/local/tomcat/webapps
+
+                    sudo chmod 777 /var/run/docker.sock
+
+                    Vi webapp.yml
+
+                        ---
+                        - hosts: ansible_server
+                        become: true
+                        tasks:
+                        - name: deleting image
+                            command: docker rmi webapp:v1
+                            ignore_errors: yes
+                        - name: create docker image
+                            command: docker build -t webapp:v1 .
+                            args:
+                            chdir: /opt/docker
+                        - name: deleting reserved image
+                            command: docker rmi kanthivardhan/webapp:v1
+                            ignore_errors: yes
+                        - name: log into Docker Hub
+                            command: docker login --username {{"kanthivardhan"}} --password {{"* * * * *"}}
+                        - name: reserving space for image
+                            command: docker tag webapp:v1 kanthivardhan/webapp:v1
+                        - name: pushing image to docker hub
+                            command: docker push kanthivardhan/webapp:v1
+
+                    ansible-playbook webapp.yml –check
+                    ansible-playbook webapp.yml
+                    
+                </p></code></pre><br>
+				<img src="assets/images/project/img17.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Now the docker image is pushed to docker hub successfully.</p>
+                <pre><code><p>
+                Installing kubernetes
+
+                Installing kubectl
+                    kubectl version --client
+                    curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.31.2/2024-11-15/bin/linux/amd64/kubectl
+                    chmod +x ./kubectl
+                    mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
+                    echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
+
+                Installing eksctl
+                    # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+                    ARCH=amd64
+                    PLATFORM=$(uname -s)_$ARCH
+
+                    curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+
+                    # (Optional) Verify checksum
+                    curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+
+                    tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+
+                    sudo mv /tmp/eksctl /usr/local/bin
+
+                Creating the Kubernetes Cluster
+                    eksctl create cluster –name kv –region ap-south-1 –node-type t2.small
+
+                It will create nodes in aws
+        </p></code></pre>
+				<img src="assets/images/project/img18.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Keep the below manifests in k8s-server under /root<br>
+                    <br>
+                    <pre><code><p>
+                vi webapppod.yml
+
+                    kind: Deployment
+                    apiVersion: apps/v1
+                    metadata:
+                      name: webapp-deploy
+                    spec:
+                      replicas: 3
+                      selector:
+                        matchLabels:
+                          app: webapp
+                      template:
+                        metadata:
+                          labels:
+                            app: webapp
+                        spec:
+                          containers:
+                            - name: webappcont
+                              image: kanthivardhan/webapp:v1
+                              imagePullPolicy: Always
+                              ports:
+                                - containerPort: 8080
+                                
+                vi webappservice.yml
+
+                    kind: Service
+                    apiVersion: v1
+                    metadata:
+                      name: webapp-service
+                    spec:
+                      selector:
+                        app: webapp
+                      ports:
+                        - port: 8080
+                          targetPort: 8080
+                      type: LoadBalancer
+                      
+                    </p></code></pre>
+                    In ansible-server keep the below playbook in /opt/docker. it is to manifests related to pods and services on k8s-server<br>
+                    <br>
+                    <pre><code><p>
+                    vi kube-deploy
+                    ---
+                    - hosts: k8s_server
+                      become: true
+                      tasks:
+                      - name: apply webapppod.yml manifesst
+                        command: /root/bin/kubectl apply -f /root/webapppod.yml
+                      - name: update deployment with new image updated in docker hub
+                        command: /root/bin/kubectl rollout restart deployment.apps/webapp-deploy
+                        ignore_errors: yes
+                      - name: waiting time
+                        command: sleep 20
+                      - name: applying webappservice.yml
+                        command: /root/bin/kubectl apply -f /root/webappservice.yml
+                        
+                    </p>    </code></pre>
+                    The webapp.yml and kube-deploy.yml are main things here<br>
+                    webapp.yml created docker image and pushed to docker hub<br>
+                    kube-deploy creates pods and loadbalance in k8s-server<br>
+                    <br>
+                    After creating all these paybooks and manifests<br>
+                    we have to place the two ansible command s in Jenkins-job configuration<br>
+                    </p><br>
+				<img src="assets/images/project/img19.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+			<p>Finally The job is created</p>
+				<img src="assets/images/project/img20.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Buidl The Job </p> <br>
+                <img src="assets/images/project/img21.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+                <p>After triggering the job, automatically the job will,<br>
+                    1-clone the code from github<br>
+                    2-build the source code<br>
+                    3-creates war file<br>
+                    4-war file transferred to ansible server<br>
+                    5-docker image is created including the war file<br>
+                    6-docker images is pushed to docker hub<br>
+                    7-from docker hub images is pulled and created containers in k8s-server<br>
+                    8-loadbalancer service is created<br>
+                    9-accessing using dns:8080/webapp-project<br>
+                    10-monitoring using Prometheus and Grafana<br>
+                    <br>
+                    The Final Webpage:
+                    </p><br>
+				<img src="assets/images/project/img22.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p><h2>Monitoring the k8s cluster using Prometheus and Grafana</h2></p>
+                <p>Add the below helm repo<br>
+                    helm repo add prometheus-grafana-kv https://prometheus-community.github.io/helm-charts<br>
+                    helm repo list<br>
+                    helm pull prometheus-grafana-kv/kube-prometheus-stack<br>
+                    tar -xvzf kube-prometheus-stack-66.4.0.tgz<br>
+                    
+                    <h3>installing the helm chart</h3><br>
+                    helm install Prometheus Prometheus-grafana-kv/kube-prometheus-stack<br>
+                    chart deployed<br>
+                    
+                    kubectl get all<br>
+                    out of these many I need only one pod  in which Prometheus and Grafana are running<br>
+                    </p><br>
+				<img src="assets/images/project/img23.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>To get th dashboard I need to edit the service file type as LoadBalancer of Prometheus and Grafana<br>
+                    kubectl edit svc prometheus-grafana<br>
+                    kubectl get all<br>
+                    we got the LB for that pod<br>
+                    </p>
+				<img src="assets/images/project/img24.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Copy load balancer and paste it in browser<br>
+                    We get Grafana logine page<br>
+                    </p><br>
+				<img src="assets/images/project/img25.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+                <p>Username – admin<br>
+                    Password – prom-operator<br>
+                    </p>
+                <h3>Monitoring things</h3><br>
+                <p>Search for Kubernetes/computeResources/multi-cluster<br>It will show cpu and memory and some other usages in the form of graphs (for pods in nodes)</p>
+				<img src="assets/images/project/img26.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>For server<br>
+                    search for Kubernetes/apiserver<br>
+                    It shows availability server, memory usage of server but mostly we see up and running of server<br>
+                    </p>
+				<img src="assets/images/project/img27.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Configure environment variables<br> => global tools => ansible => install automatically<br>Click on Snippet generator select AnsiblePlaybook: Invoke an ansible playbook</p>
+				<img src="assets/images/project/img28.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<!--<p>Add ssh credentials, copy paste the private_key of ubuntu user and then generate the pipeline script</p>-->
+				<img src="assets/images/project/img29.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>To monitor other things<br>
+                    NodeExporter/USEMethod/cluster<br>
+                    Same graphs with different colours<br>
+                    </p><br>
+				<img src="assets/images/project/img30.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<img src="assets/images/project/img31.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<img src="assets/images/project/img32.png" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+			<!--	<p>Access the GUI using below URL<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>https://IP:8084/</strong></p>
+				<img src="assets/images/project/img33.jpg" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Continuous monitoring – Install Prometheus<br>launch a VM with t2.micro<br>Update the packages using sudo yum  update command<br>install Prometheus using the <a href="https://prometheus.io/download/" target="_blank">link</a><br>goto the prometheus downloads page => right click and copy link address => download the file using wget command<br>untar the file using tar -xvzf file_name command<br>Configure the below Prometheus service file:<br><strong>sudo vi /etc/systemd/system/prometheus.service</strong></p>
+				<img src="assets/images/project/img34.jpg" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>start the Prometheus using below commands<br><strong>sudo systemctl daemon-reload<br>sudo systemctl daemon-reload<br>sudo systemctl start Prometheus</strong></p>
+				<img src="assets/images/project/img35.jpg" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Configure Node Exporters:<br>Goto the server you wish to monitor which is “master” and “BNK-UAT-Server” server. Download the file using wget commad<br>Create Node Export service file as shown below.</p>
+				<img src="assets/images/project/img36.jpg" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Use below commad to start node exporter in both “master” and “BNK-UAT-Server”<br><strong>sudo systemctl daemon-reload<br>sudo systemctl status node_exporter<br>sudo systemctl start node_exporter</strong>
+				copy the private IP Address of the server you wish to monitor using below commad<br>hostname -i<br>Goto to Prometheus Server ::<br>### installation path <br>cd /root/prometheus-2.38.0.linux-amd64<br>vi prometheus.yml<br>## Add the target with valid node_exporter port as mentioned below:<br>- targets: ["172.31.8.252:9100"]  # Take the private IP Address of Target_Node.<br>restart the Prometheus using below command<br>sudo systemctl restart prometheus<br>sudo systemctl status Prometheus<br>Navigate to Prometheus GUI: http://pub_IP:9090/
+				<img src="assets/images/project/img37.jpg" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>install Grafana in the same Prometheus server</p>
+				<img src="assets/images/project/img38.jpg" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Start the Grafana service using below command<br>&nbsp;&nbsp;&nbsp;&nbspsudo /bin/systemctl enable grafana-server.service<br>&nbsp;&nbsp;&nbsp;&nbspsudo /bin/systemctl start grafana-server.service<br>&nbsp;&nbsp;&nbsp;&nbspsudo /bin/systemctl status grafana-server.service<br><br>Navigate to Grafana GUI: http://pub_IP:3000</p>
+				<img src="assets/images/project/img39.jpg" alt="Project Image" style="display: block; margin: 0 auto;"><br>
+				<p>Configure Prometheus in Grafana by clicking on data source, add the URL of prometheus, Click on Save. Now Create the Dashboard by navigating to dashboard<br>Click on code and add the PromQL as shown below<br>1. CPU utilization <br>sum by(mode)(irate(node_cpu_seconds_total{mode!="idle"}[5m])) > 0<br>2. Disk Space Utilization<br>
+100 - (node_filesystem_avail_bytes{fstype!="tmpfs",fstype!="overlay"} * 100 / node_filesystem_size_bytes{fstype!="tmpfs",fstype!="overlay"})<br>
+3. Total Available Memory in percentage<br>
+(node_memory_MemAvailable_bytes * 100) / node_memory_MemTotal_bytes
+			<img src="assets/images/project/img40.jpg" alt="Project Image" style="display: block; margin: 0 auto;"><br>-->
+        </div>
+    </section>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
